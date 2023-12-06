@@ -36,5 +36,6 @@ class ModelTests(TestCase):
         """Test that creating a user without an email raises a valueError"""
         with self.assertRaises(ValueError):
             get_user_model().objects.create_user('', 'samplepass123')
-        # with self.assertRaises(ValueError): # Write a test when user gives a space as an input
+        # with self.assertRaises(ValueError):
+        # # Write a test when user gives a space as an input
         #     get_user_model().objects.create_user(' ', 'samplepass123')
