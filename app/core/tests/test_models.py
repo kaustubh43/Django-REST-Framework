@@ -39,3 +39,13 @@ class ModelTests(TestCase):
         # with self.assertRaises(ValueError):
         # # Write a test when user gives a space as an input
         #     get_user_model().objects.create_user(' ', 'samplepass123')
+
+    def test_create_superuser(self):
+        """Test creating a superuser"""
+        user = get_user_model().objects.create_superuser(
+            'test@example.com',
+            'test123'
+        )
+
+        self.assertTrue(user.is_superuser)
+        self.assertTrue(user.is_staff)
