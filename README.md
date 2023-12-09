@@ -2,7 +2,10 @@
 
 ## A course project from [Udemy](https://www.udemy.com/share/101XNg3@jsxAQGXQVrd2RknL8ugwpl4Gz50QvEFEHyfghs6k1OuCAHPgqke78ZvdB5Wo1f70Xw==/)
 
-## Test Driven Development
+> ### Test Driven Development
+> a software development practice that emphasizes writing tests before writing the actual code. 
+>It follows a cyclical process of writing a failing test, writing the minimum code to make the test pass,
+>and then refactoring the code
 
 > ### Features
 >> 19 API Endpoints
@@ -19,7 +22,7 @@
 >>
 >>1. Django,
 >>
->>1. Django-Rest,
+>>1. Django-Rest Framework,
 >>
 >>1. Postgres,
 >>
