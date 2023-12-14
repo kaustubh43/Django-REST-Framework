@@ -90,7 +90,7 @@ class PublicUserApiTests(TestCase):
         res = self.client.post(TOKEN_URL, payload)
 
         self.assertNotIn('token', res.data)
-        self.assertEquals(res.status_code, status.HTTP_400_BAD_REQUEST)
+        self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
 
     def test_user_not_found_with_email_id(self):
         """Test returns error if user is not found with supplied email id"""
@@ -112,7 +112,7 @@ class PublicUserApiTests(TestCase):
         """Test authentication is required for users"""
         res = self.client.get(ME_URL)
 
-        self.assertEqual(res.status_code, status.HTTP_401_UNAUTHORIZED)
+        self.assertEqual(res.status_code, status.HTTP_403_FORBIDDEN)
 
 
 class PrivateUserApiTests(TestCase):
