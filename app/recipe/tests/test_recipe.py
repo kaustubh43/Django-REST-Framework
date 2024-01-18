@@ -14,7 +14,7 @@ from core.models import Recipe
 
 from recipe.serializers import RecipeSerializer
 
-RECIPES_URL = revers('recipe:recipe-list')
+RECIPES_URL = reverse('recipe:recipe-list')
 
 
 def create_recipe(user, **params):
